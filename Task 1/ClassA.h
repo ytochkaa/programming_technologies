@@ -3,16 +3,16 @@
 class ClassB;
 class ClassA
 {
-	int m_n; //фактическое число частей 
-	ClassB* m_pB[100]; //массив указателей на части 
+	int m_n; //С„Р°РєС‚РёС‡РµСЃРєРѕРµ С‡РёСЃР»Рѕ С‡Р°СЃС‚РµР№ 
+	ClassB* m_pB[100]; //РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С‡Р°СЃС‚Рё 
 public: 
 	ClassA(); 
 	~ClassA(); 
-	const int getN () const; //вернуть число частей 
-	const ClassB** getB (int&) const; //вернуть части 
-	bool add (const int); //добавить часть 
-	bool del (const int); //удалить часть 
-	int find (const int) const; //вернуть индекс части 								
-	const int getX(const int) const;//вернуть значение объекта 
+	const int getN () const; //РІРµСЂРЅСѓС‚СЊ С‡РёСЃР»Рѕ С‡Р°СЃС‚РµР№  
+	const ClassB** getB (int&) const; //РІРµСЂРЅСѓС‚СЊ С‡Р°СЃС‚Рё 
+	bool add (const int); //РґРѕР±Р°РІРёС‚СЊ С‡Р°СЃС‚СЊ 
+	bool del (const int); //СѓРґР°Р»РёС‚СЊ С‡Р°СЃС‚СЊ
+	int find (const int) const; //РІРµСЂРЅСѓС‚СЊ РёРЅРґРµРєСЃ С‡Р°СЃС‚Рё 								
+	const int getX(const int) const;//РІРµСЂРЅСѓС‚СЊ Р·РЅР°С‡РµРЅРёРµ РѕР±СЉРµРєС‚Р° 
 };
 

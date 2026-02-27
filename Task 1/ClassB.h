@@ -1,17 +1,16 @@
 #pragma once
 class ClassB
 {
-	int m_x; //член-данное части
-
+	int m_x; //С‡Р»РµРЅ-РґР°РЅРЅРѕРµ С‡Р°СЃС‚Рё
 public:
 	ClassB();
 	~ClassB();
-	//методы установки и получения значения m_х 
+	//РјРµС‚РѕРґС‹ СѓСЃС‚Р°РЅРѕРІРєРё Рё РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ m_С… 
 	void setX(const int); 
 	const int getX() const; 
-	bool verify (const int) const; //проверить объект 
-	ClassB& operator = (const ClassB&); //перегрузка оператора =
-	//перегрузка операторов == и != 
+	bool verify (const int) const; //РїСЂРѕРІРµСЂРёС‚СЊ РѕР±СЉРµРєС‚ 
+	ClassB& operator = (const ClassB&); //РїРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С‚РѕСЂР° =
+	//РїРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С‚РѕСЂРѕРІ == Рё != 
 	bool operator == (const ClassB&) const; 
 	bool operator != (const ClassB&) const;
 };
